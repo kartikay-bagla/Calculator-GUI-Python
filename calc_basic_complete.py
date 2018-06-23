@@ -14,17 +14,12 @@ class Window(QtGui.QMainWindow):
            "%": operator.mod,
            "//": operator.floordiv,
            "**": operator.pow}
-    
-
     def __init__(self):
         """Initializes and shows the GUI"""
-
         #set up everything
         self.set_layout() 
-
         #objects connected to actions
         self.calculate.clicked.connect(self.calculate_output)
-
         #Show the GUI after initialization
         self.show()
 
@@ -95,7 +90,6 @@ class Window(QtGui.QMainWindow):
         self.label_output.setText("Output")
         self.calculate.setText("Calculate")
     
-
     def calculate_output(self):
         """Gets the value in the input fields, calculates and 
         prints the output in the output text field"""
