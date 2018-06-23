@@ -14,6 +14,7 @@ class Window(QtGui.QMainWindow):
            "%": operator.mod,
            "//": operator.floordiv,
            "**": operator.pow}
+           
     def __init__(self):
         """Initializes and shows the GUI"""
         #set up everything
